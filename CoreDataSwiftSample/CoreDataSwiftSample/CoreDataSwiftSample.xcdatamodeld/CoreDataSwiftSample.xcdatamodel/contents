@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userid" attributeType="Integer 64" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="workDetails" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="WorkDetails" syncable="YES"/>
+    </entity>
+    <entity name="WorkDetails" representedClassName="WorkDetails" syncable="YES">
+        <attribute name="workDate" optional="YES" attributeType="Date" defaultDateTimeInterval="544174200" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="workName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="User" positionX="-5382" positionY="-9189" width="128" height="118"/>
+        <element name="WorkDetails" positionX="-5105" positionY="-9136" width="128" height="73"/>
+    </elements>
+</model>
